@@ -1,0 +1,25 @@
+*{
+    background-color: cadetblue;
+    padding: 0;
+}
+.intro{
+    padding: 15px;
+    background-color: aqua;
+    width: max-content;
+    border-radius: 10px;
+}
+.CalculatorBody{
+    height: 50vh;
+    width: 50vw;
+    background-color: rgb(221, 181, 71);
+    margin: 10px 25vw;
+    border: 5px dashed brown;
+    border-radius: 10px;
+}
+#CalIput{
+    background-color: brown;
+    border-radius: 5px;
+    height: 100px;
+    width: 380px;
+    margin: 12px;
+}

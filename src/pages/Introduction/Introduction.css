@@ -1,11 +1,11 @@
 *{
-    background-color: cadetblue;
+    background-color: burlywood;
     padding: 0;
     box-sizing: border-box;
 }
 .intro{
     padding: 15px;
-    background-color: aqua;
+    background-color: brown;
     width: max-content;
     border-radius: 10px;
 }
@@ -13,7 +13,7 @@
     /* height: 50vh; */
     width: 80%;
     max-width: 500px;
-    background-color: rgb(221, 181, 71);
+    background-color: rgb(236, 183, 113);
     margin: 10px auto;
     border: 5px dashed brown;
     border-radius: 10px;
@@ -30,7 +30,7 @@
 }
 .buttonbody{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 7px;
     height: 100%;
@@ -44,5 +44,11 @@
     border-radius: 10px;
     font-size: 25px;
     align-content: center;
-    /* border: 1px solid black; */
+    border: 2px solid brown;
+    color: brown;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    text-align: center;
+    vertical-align: middle;
+
 }

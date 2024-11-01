@@ -6,7 +6,7 @@
 .intro{
     padding: 15px;
     background-color: brown;
-    width: max-content;
+    /* width: max-content; */
     border-radius: 10px;
 }
 .CalculatorBody{

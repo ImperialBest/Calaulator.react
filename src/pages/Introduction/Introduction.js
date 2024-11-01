@@ -43,16 +43,16 @@ const Introduction = () => {
     setCalcData("");
     setHasCalculated(false);
   };
-  // const deletevalue = () => {
-  //   setCalcData((previous) => {
-  //     let backIndex = 1;
-  //     if (/Ans$/.test(previous)) {
-  //       backIndex = 3;
-  //     } else if (/\D$/.test(previous)) {
-  //       return "";
-  //     }
-  //     return previous.substring(0, previous.length - backIndex);
-  //   });
+  const deletevalue = () => {
+    setCalcData((previous) => {
+      let backIndex = 1;
+      if (/Ans$/.test(previous)) {
+        backIndex = 3;
+      } else if (/\D$/.test(previous)) {
+        return "";
+      }
+      return previous.substring(0, previous.length - backIndex);
+    });
   };
   // useEffect(() => {
   //   console.log(`Calc data is : ${calcData}`);

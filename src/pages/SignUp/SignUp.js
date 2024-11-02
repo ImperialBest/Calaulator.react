@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import Login from '../Login/Login';
 
 function SignUp() {
+  const checkInput = ()=>{
+    if (input === "") {
+      alert ("write your Fullname")
+    }
+  }
   return (
     <div className="formfield">
     <form className="firstform">
@@ -10,7 +15,7 @@ function SignUp() {
         <label for="name1">
           <p id="name">Fullname: </p>
         </label>
-        <input type="text" id="name1" />
+        <input type="text"  id="name1" />
       </div>
       <div className="input-field">
         <label for="name2">
@@ -31,7 +36,7 @@ function SignUp() {
         <input type="text" id="pass2" />
       </div>
     </form>
-    <button>
+    <button onClick={checkInput}>
       <Link to="/login" >Sign Up</Link>
     </button>
   </div>

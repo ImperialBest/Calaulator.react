@@ -27,7 +27,7 @@ const Introduction = () => {
       console.log(calcData);
       let currentCalcData = calcData.replace(pattern, "$1");
       currentCalcData = currentCalcData.replace(answerPattern, _answer);
-      currentCalcData = currentCalcData.replace(/^/g, "**");
+      currentCalcData = currentCalcData.replace(/\^/g, "**");
 
       console.log(currentCalcData);
 
@@ -63,7 +63,7 @@ const Introduction = () => {
         How was your learning so far?
       </marquee>
       <div className="CalculatorBody">
-        <input type="text" value={calcData} id="CalIput" />
+        <input type="text" value={calcData} id="CalIput" readOnly />
         <div className="buttonbody">
           <button className="buttonbodyItem" onClick={() => inputData("9")}>
             9
@@ -74,6 +74,10 @@ const Introduction = () => {
           <button className="buttonbodyItem" onClick={() => inputData("7")}>
             7
           </button>
+          <button className="buttonbodyItem" onClick={() => inputData("+")}>
+            +
+          </button>
+
           <button className="buttonbodyItem" onClick={() => inputData("6")}>
             6
           </button>
@@ -82,6 +86,9 @@ const Introduction = () => {
           </button>
           <button className="buttonbodyItem" onClick={() => inputData("4")}>
             4
+          </button>
+          <button className="buttonbodyItem" onClick={() => inputData("-")}>
+            -
           </button>
           <button className="buttonbodyItem" onClick={() => inputData("3")}>
             3
@@ -92,8 +99,14 @@ const Introduction = () => {
           <button className="buttonbodyItem" onClick={() => inputData("1")}>
             1
           </button>
+          <button className="buttonbodyItem" onClick={() => inputData("*")}>
+            *
+          </button>
           <button className="buttonbodyItem" onClick={() => inputData("0")}>
             0
+          </button>
+          <button className="buttonbodyItem" onClick={() => inputData(".")}>
+            .
           </button>
           <button
             className="buttonbodyItem"
@@ -101,33 +114,27 @@ const Introduction = () => {
           >
             =
           </button>
-          <button className="buttonbodyItem" onClick={() => inputData("+")}>
-            +
-          </button>
+
           <button className="buttonbodyItem" onClick={() => inputData("/")}>
             /
           </button>
-          <button className="buttonbodyItem" onClick={() => inputData(".")}>
-            .
-          </button>
-          <button className="buttonbodyItem" onClick={() => inputData("*")}>
-            *
-          </button>
-          <button className="buttonbodyItem" onClick={() => inputData("^")}>
-            ^
-          </button>
+
           <button className="buttonbodyItem" onClick={() => inputData("(")}>
             (
           </button>
           <button className="buttonbodyItem" onClick={() => inputData(")")}>
             )
           </button>
-          <button className="buttonbodyItem" onClick={() => inputData("-")}>
-            -
+          <button className="buttonbodyItem" onClick={() => inputData("%")}>
+            %
+          </button>
+          <button className="buttonbodyItem" onClick={() => inputData("^")}>
+            ^
           </button>
           <button className="buttonbodyItem" onClick={() => inputData("Ans")}>
             Ans
           </button>
+
           <button className="buttonbodyItem" onClick={deletevalue}>
             Del
           </button>

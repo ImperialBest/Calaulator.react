@@ -20,7 +20,8 @@ const Login = () => {
         </div>
       </form>
       <button>
-        <Link to="/intro">Login In</Link>
+        <Link to="/">Login In</Link>
+        {/* <link to="/signup">SignUp</link> */}
       </button>
     </div>
   );

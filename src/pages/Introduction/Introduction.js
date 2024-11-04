@@ -59,9 +59,9 @@ const Introduction = () => {
   // }, [calcData]);
   return (
     <div>
-      <marquee direction="right" className="intro">
+      {/* <marquee direction="right" className="intro">
         How was your learning so far?
-      </marquee>
+      </marquee> */}
       <div className="CalculatorBody">
         <input type="text" value={calcData} id="CalIput" readOnly />
         <div className="buttonbody">
